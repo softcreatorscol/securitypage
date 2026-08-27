@@ -12,8 +12,8 @@
     --azul-900:#0c1633;
     --azul-700:#16214d;
     --azul-500:#2a3a7a;
-    --fucsia:#ff5fae;
-    --fucsia-soft:#ff8ac4;
+    --fucsia:#542785;
+    --fucsia-soft:#7a4bb0;
     --texto:#e9e9f2;
     --texto-tenue:#9aa1c4;
     --linea:#242c52;
@@ -195,19 +195,11 @@
     flex-direction:column;
   }
   .servicio{
-    display:grid;
-    grid-template-columns:120px 1fr;
-    gap:20px;
+    display:block;
     padding:26px 0;
     border-top:1px solid var(--linea);
   }
   .servicio:last-child{border-bottom:1px solid var(--linea);}
-  .servicio .num{
-    font-family:'IBM Plex Mono', monospace;
-    color:var(--fucsia);
-    font-size:13px;
-    letter-spacing:.06em;
-  }
   .servicio h3{
     font-size:19px;
     font-weight:600;
@@ -251,7 +243,6 @@
   @media (max-width:760px){
     .hero{grid-template-columns:1fr;padding-top:36px;}
     .hero-photo{order:-1;aspect-ratio:16/10;}
-    .servicio{grid-template-columns:1fr;gap:6px;}
     .cierre{flex-direction:column;align-items:flex-start;}
     .draft-tag{right:-48px;top:16px;font-size:10px;}
   }
@@ -264,7 +255,7 @@
 <div class="wrap">
   <header>
     <div class="brandline">
-      <span class="mono">JACK SOUTHERMAN <span class="fucsia-dot">·</span> SEGURIDAD &amp; CONFIABILIDAD</span>
+      <span class="mono">SEGURIDAD <span class="fucsia-dot">&amp;</span> CONFIABILIDAD</span>
       <span class="mono">PROPUESTA PRELIMINAR</span>
     </div>
   </header>
@@ -292,7 +283,6 @@
 
     <div class="servicio-list">
       <div class="servicio">
-        <div class="num mono">EC</div>
         <div>
           <h3>Estudio de Confiabilidad</h3>
           <p>Evaluación integral de antecedentes, trayectoria, referencias y factores relevantes para apoyar procesos de selección y toma de decisiones seguras.</p>
@@ -300,7 +290,6 @@
       </div>
 
       <div class="servicio">
-        <div class="num mono">ES</div>
         <div>
           <h3>Estudios de Seguridad</h3>
           <p>Análisis profesional de personas, entornos y situaciones para identificar factores de riesgo, vulnerabilidades y oportunidades de prevención.</p>
@@ -308,7 +297,6 @@
       </div>
 
       <div class="servicio">
-        <div class="num mono">EI</div>
         <div>
           <h3>Entrevista de Seguridad</h3>
           <p>Entrevistas especializadas orientadas a obtener, contrastar y valorar información relevante para fortalecer la confiabilidad y la seguridad de personas y organizaciones.</p>
